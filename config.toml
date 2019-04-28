@@ -1,0 +1,77 @@
+baseURL = "http://arosbi.com/"
+languageCode = "en-us"
+title = "arosbi"
+theme = "terrassa"
+
+[permalinks]
+    posts = ":section/:year/:month/:day/:title/"
+
+[outputs]
+    home = ["HTML", "RSS"]
+    page = ["HTML", "RSS"]
+
+[params]
+    description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
+    favicon = "favicon.ico" # Relative URL
+    logo = "" # Absolute URL
+
+[params.hero]
+    textColor = "" # Empty for default color
+
+[params.cta] # Call To Action 
+    show = false
+    cta = "Contact"
+    link = "contact" # Relative URL
+
+[params.separator] # Separators between sections on the home page
+    show = false
+
+[params.fa] # Font Awesome options
+    version = "5.7.2"
+    integrity = "sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+
+[params.form] # Contact form
+    netlify = true # Use only if you are using Netlify
+    action = "https://formspree.io/your@email.com"
+    method = "POST"
+    inputNameName = "name"
+    inputNameLabel = "Name"
+    inputNamePlaceholder = "Your name"
+    inputEmailName = "email"
+    inputEmailLabel = "Email"
+    inputEmailPlaceholder = "Your email"
+    inputMsgName = "message"
+    inputMsgLabel = "Write something"
+    inputMsgLength = 750
+    inputSubmitValue = "Send"
+
+[params.posts]
+    showAuthor = true
+    showDate = true
+    showTags = true
+    dateFormat = "Monday, Jan, 2006"
+
+[params.social] # Social networks
+    twitter = "https://twitter.com/hbiarge"
+    github = "https://github.com/hbiarge"
+    linkedin = "https://www.linkedin.com/in/hbiarge/"
+
+[params.copy] # Copyright
+    copy = "" # Empty for default content
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = false
+    [privacy.twitter]
+        disable = false
+        enableDNT = true
+        simple = false
+    [privacy.vimeo]
+        disable = false
+        simple = false
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
